@@ -1,0 +1,6 @@
+HTML    : (HyperText Markup Language) is the most basic building block of the Web. It defines            themeaning and structure of web content. Other technologies besides HTML are generally            used to describe a web page's appearance/presentation (CSS) or functionality/behavior              (JavaScript).
+
+CSS     :(Cascading Style Sheets) is a stylesheet language used to describe the presentation of a            document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML).             CSS describes how elements should be rendered on screen, on paper, in speech, or on                other media.
+
+
+BOOTSTRAP: Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first             front-end web development. It contains HTML, CSS and (optionally) JavaScript-based                 design templates for typography, forms, buttons, navigation, and other interface                   components.
