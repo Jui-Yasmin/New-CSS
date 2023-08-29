@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  #frameDiv {
+    height: 200px;
+    width: 200px;
+    border: solid black 1px;
+    margin: 10px;
+    background-color: rgb(222, 255, 244);
+    position: relative;
+    overflow: hidden;
+  }
+
+  #lineDiv {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100px;
+    height: 0px;
+    border: dashed 2px black;
+    transform-origin: 50%;
+    rotate: -45deg;
+    animation: moveLine alternate ease-in-out 3s 4;
+  }
+
+  @keyframes moveLine {
+    100%  { rotate: 45deg;}
+  }
+
+  #pinkDiv {
+    width: 20px;
+    height: 20px;
+    border-radius: 25%;
+    background-color: hotpink;
+    position: absolute;
+    z-index: 1;
+    offset-path: path('M20 180 L180 20');
+    stroke-width: 2px;
+    stroke: black;
+    animation: movePinkDiv alternate ease-in-out 3s 4;
+  }
+
+  @keyframes movePinkDiv {
+    100% {  
+            offset-distance: 100%;
+            offset-path: path('M20 20 L180 180');
+          }
+  }
+
+</style>
+</head>
+<body>
+
+<h1>The path itself is animated</h1>
+
+<p>In this example, the pink box starts moving along a path from bottom left to top right. But the path itself is animated and changes to a path from top left to bottom right. As the path changes gradually like this within 3 seconds, the pink box moves along, so even though the path is allways straight, the motion becomes a curve.</p>
+
+<p>The dashed line moving behind the pink box is not the actual path the pink box moves along, it is just there to show where that path is.</p>
+
+<div id="frameDiv">
+  <div id="pinkDiv"></div>
+  <div id="lineDiv"></div>
+</div>
+
+</body>
+</html>
