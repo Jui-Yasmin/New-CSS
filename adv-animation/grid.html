@@ -4,10 +4,10 @@
     <style>
       .grid-container {
         display: grid;
-        grid: auto / auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 10px;
         background-color: #2196f3;
         padding: 10px;
-        animation: mymove 5s infinite;
       }
 
       .grid-container > div {
@@ -17,17 +17,22 @@
         font-size: 30px;
       }
 
+      .item1 {
+        grid-area: 2 / 1 / span 2 / span 3;
+        animation: mymove 5s infinite;
+      }
+
       @keyframes mymove {
         50% {
-          grid: 100px / auto auto;
+          grid-area: 1 / 2 / span 3 / span 2;
         }
       }
     </style>
   </head>
   <body>
-    <h1>Animation of the grid Property</h1>
+    <h1>Animation of the grid-area Property</h1>
 
-    <p>The animation will change the grid layout.</p>
+    <p>The animation will change the appearence of "item1".</p>
 
     <div class="grid-container">
       <div class="item1">1</div>
@@ -37,7 +42,6 @@
       <div class="item5">5</div>
       <div class="item6">6</div>
       <div class="item7">7</div>
-      <div class="item8">8</div>
     </div>
   </body>
 </html>
