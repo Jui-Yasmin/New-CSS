@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #myDIV {
+        background-color: lightblue;
+        height: 50px;
+        inline-size: 100px;
+        overflow: hidden;
+        animation: mymove 5s infinite;
+      }
+
+      @keyframes mymove {
+        50% {
+          inline-size: 250px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Animation of inline-size</h1>
+
+    <p>
+      Gradually change the inline-size property from 100px to 250px, and back to
+      100px:
+    </p>
+    <p></p>
+
+    <div id="myDIV">This is my DIV element.</div>
+  </body>
+</html>
