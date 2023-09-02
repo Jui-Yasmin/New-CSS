@@ -4,22 +4,20 @@
     <style>
       #myDIV {
         border: 1px solid black;
-        column-count: 3;
-        column-rule: 1px outset red;
         animation: mymove 5s infinite;
       }
 
       @keyframes mymove {
         50% {
-          column-rule: 50px outset blue;
+          columns: 100px 5;
         }
       }
     </style>
   </head>
   <body>
-    <h1>Animation of column-rule</h1>
+    <h1>Animation of columns</h1>
 
-    <p>Gradually change the rule between the columns:</p>
+    <p>Gradually change the columns property:</p>
     <p></p>
     <div id="myDIV">
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
@@ -37,15 +35,10 @@
     </div>
 
     <p>
-      The column-rule property is a shorthand property for all column-rule
-      properties.
+      The columns property is a shorthand property for setting the column-count
+      and column-width properties.
     </p>
-    <p>
-      The column-rule-color and column-rule-width properties are
-      <em>animatable</em> in CSS.
-    </p>
-    <p>
-      <b>Note:</b> Edge does not support animation on the column-rule property.
-    </p>
+
+    <p><b>Note:</b> Edge does not support animation on the columns property.</p>
   </body>
 </html>

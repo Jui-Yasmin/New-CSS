@@ -4,23 +4,27 @@
     <style>
       #myDIV {
         border: 1px solid black;
+        background-color: lightgoldenrodyellow;
         column-count: 3;
-        column-rule: 1px outset red;
+        column-gap: 10px;
         animation: mymove 5s infinite;
       }
 
       @keyframes mymove {
         50% {
-          column-rule: 50px outset blue;
+          column-gap: 100px;
         }
       }
     </style>
   </head>
   <body>
-    <h1>Animation of column-rule</h1>
+    <h1>Animation of column-gap</h1>
 
-    <p>Gradually change the rule between the columns:</p>
+    <p>
+      Change the gap between the columns from 10px to 100px, and back to 10px:
+    </p>
     <p></p>
+
     <div id="myDIV">
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
       nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
@@ -37,15 +41,7 @@
     </div>
 
     <p>
-      The column-rule property is a shorthand property for all column-rule
-      properties.
-    </p>
-    <p>
-      The column-rule-color and column-rule-width properties are
-      <em>animatable</em> in CSS.
-    </p>
-    <p>
-      <b>Note:</b> Edge does not support animation on the column-rule property.
+      <b>Note:</b> Edge does not support animation on the column-gap property.
     </p>
   </body>
 </html>

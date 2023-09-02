@@ -11,16 +11,20 @@
 
       @keyframes mymove {
         50% {
-          column-rule: 50px outset blue;
+          column-rule-width: 400px;
         }
       }
     </style>
   </head>
   <body>
-    <h1>Animation of column-rule</h1>
+    <h1>Animation of column-rule-width</h1>
 
-    <p>Gradually change the rule between the columns:</p>
+    <p>
+      Gradually change the width of the rule between the columns from 1px to
+      50px, and back to 1px:
+    </p>
     <p></p>
+
     <div id="myDIV">
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
       nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
@@ -37,15 +41,8 @@
     </div>
 
     <p>
-      The column-rule property is a shorthand property for all column-rule
-      properties.
-    </p>
-    <p>
-      The column-rule-color and column-rule-width properties are
-      <em>animatable</em> in CSS.
-    </p>
-    <p>
-      <b>Note:</b> Edge does not support animation on the column-rule property.
+      <b>Note:</b> Edge does not support animation on the column-rule-width
+      property.
     </p>
   </body>
 </html>
