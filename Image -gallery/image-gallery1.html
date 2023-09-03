@@ -2,120 +2,26 @@
 <html>
   <head>
     <style>
-      div.gallery {
-        border: 1px solid #ccc;
-      }
-
-      div.gallery:hover {
-        border: 1px solid #777;
-      }
-
-      div.gallery img {
-        width: 100%;
-        height: auto;
-      }
-
-      div.desc {
-        padding: 15px;
+      .button {
+        background-color: #4caf50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
         text-align: center;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      .responsive {
-        padding: 0 6px;
-        float: left;
-        width: 24.99999%;
-      }
-
-      @media only screen and (max-width: 400px) {
-        .responsive {
-          width: 49.99999%;
-          margin: 6px 0;
-        }
-      }
-
-      @media only screen and (max-width: 500px) {
-        .responsive {
-          width: 100%;
-        }
-      }
-
-      .clearfix:after {
-        content: "";
-        display: table;
-        clear: both;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
       }
     </style>
   </head>
   <body>
-    <h2>Responsive Image Gallery</h2>
+    <h2>CSS Buttons</h2>
 
-    <h4>Resize the browser window to see the effect.</h4>
-
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="103.jpg">
-          <img
-            src="103.jpg"
-            alt="Cinque Terre"
-            width="600"
-            height="200"
-          />
-        </a>
-        <div class="desc">Add a description of the image here</div>
-      </div>
-    </div>
-
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="cat.jpg">
-          <img src="cat.jpg" alt="Forest" width="600" height="400" />
-        </a>
-        <div class="desc">Add a description of the image here</div>
-      </div>
-    </div>
-
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="jui.jpg">
-          <img
-            src="jui.jpg"
-            alt="Northern Lights"
-            width="600"
-            height="400"
-          />
-        </a>
-        <div class="desc">Add a description of the image here</div>
-      </div>
-    </div>
-
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="109.jpg">
-          <img
-            src="109.jpg"
-            alt="Mountains"
-            width="600"
-            height="400"
-          />
-        </a>
-        <div class="desc">Add a description of the image here</div>
-      </div>
-    </div>
-
-    <div class="clearfix"></div>
-
-    <div style="padding: 6px">
-      <p>
-        Hello brother this is me and my newphy image.... . Hello brother this is me and my newphy image.... .Hello brother this is me and my newphy image.... .Hello brother this is me and my newphy image.... .Hello brother this is me and my newphy image.... .Hello brother this is me and my newphy image.... .Hello brother this is me and my newphy image.... .Hello brother this is me and my newphy image.... .Hello brother this is me and my newphy image.... .Hello brother this is me and my newphy image.... .
-      </p>
-      <p>
-        You will learn more about media queries and responsive web design later
-        in our CSS Tutorial.
-      </p>
-    </div>
+    <button>Default Button</button>
+    <a href="#" class="button">Link Button</a>
+    <button class="button">Button</button>
+    <input type="button" class="button" value="Input Button" />
   </body>
 </html>
