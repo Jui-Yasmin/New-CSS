@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #myDIV {
+        width: 500px;
+        height: 300px;
+        border: 1px solid black;
+        background-image: url("1.jpg");
+        background-position-x: left;
+        animation: mymove 5s infinite;
+      }
+
+      @keyframes mymove {
+        50% {
+          background-position-x: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Animation of background-position-x</h1>
+
+    <p>
+      Gradually change the background-position-x from "left" to "center", and
+      back to "left":
+    </p>
+    <p></p>
+    <div id="myDIV"></div>
+  </body>
+</html>
