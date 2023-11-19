@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-#myDIV {
-  background-color:lightblue;
-  width: 100%;
-  min-block-size: 30px;
-  animation: mymove 5s infinite;
-}
+  <head>
+    <style>
+      #myDIV {
+        background-color: rgb(75, 54, 230);
+        width: 100%;
+        min-block-size: 30px;
+        animation: mymove 5s infinite;
+      }
 
-@keyframes mymove {
-  50% {min-block-size: 150px;}
-}
-</style>
-</head>
-<body>
+      @keyframes mymove {
+        50% {
+          min-block-size: 150px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Animation of min-block-size</h1>
 
-<h1>Animation of min-block-size</h1>
+    <p>
+      Gradually change the min-block-size property from 30px to 150px, and back
+      to 30px. The limited content keeps the box from getting smaller in the
+      block direction:
+    </p>
+    <p></p>
 
-<p>Gradually change the min-block-size property from 30px to 150px, and back to 30px. The limited content keeps the box from getting smaller in the block direction:<p>
-
-<div id="myDIV">
-  <p>This is my DIV element.</p>
-  <p>This is just some more text to fill the box.</p>
-  <p>This is just some more text to fill the box.</p>
-</div>
-
-</body>
+    <div id="myDIV">
+      <p>This is my DIV element.</p>
+      <p>This is just some more text to fill the box.</p>
+      <p>This is just some more text to fill the box.</p>
+    </div>
+  </body>
 </html>
