@@ -16,3 +16,5 @@ machine-languag :Machine language is a low-level language made up of binary numb
                 run programmes in machine language before they are run on a computer. When a specific task, even the smallest process executes, machine language is transported to the
                 system processor. Computers are only able to understand binary data as they are digital devices.
 Template   : A system that helps you arrange information on a computer screen.A particular model for arranging information or images in a document, etc. that you can copy and use for your                own purposes.
+
+Loop      :  In computer programming, a loop is a sequence of instruction s that is continually repeated.( কম্পিউটার প্রোগ্রামিংয়ে, লুপ হল নির্দেশাবলীর একটি ক্রম যা ক্রমাগত পুনরাবৃত্তি হয় )
