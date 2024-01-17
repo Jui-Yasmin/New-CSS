@@ -21,5 +21,6 @@ Template   : A system that helps you arrange information on a computer screen.A 
 Loop      :  In computer programming, a loop is a sequence of instruction s that is continually repeated.( কম্পিউটার প্রোগ্রামিংয়ে, লুপ হল নির্দেশাবলীর একটি ক্রম যা ক্রমাগত পুনরাবৃত্তি হয় )
 
 
-Function  : A function is a block of code which only runs when it is called.You can pass data, known as parameters, into a function.Functions are used to perform certain actions, and they             are important for reusing code: Define the code once, and use it many times.For example, main() is a function, which is used to execute code, and printf() is a function; 
-            used to output/print text to the screen
+Function  : A function is a block of code which only runs when it is called.You can pass data, known as parameters, into a function.     {Functions are used to perform certain actions,
+            and they are important for reusing code: Define the code once, and use it many times.(ফাংশনগুলি নির্দিষ্ট ক্রিয়া সম্পাদনের জন্য ব্যবহার করা হয়, এবং সেগুলি কোড পুনঃব্যবহারের জন্য গুরুত্বপূর্ণ: কোডটি একবার সংজ্ঞায়িত 
+                              করুন এবং এটি বহুবার  ব্যবহার করুন৷)}            For example, main() is a function, which is used to execute code, and printf() is a function; used to output/print text to the screen
